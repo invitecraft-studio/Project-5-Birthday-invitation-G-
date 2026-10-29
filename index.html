@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Daanvi’s Princess Garden Birthday</title>
+<style>html.js:not(.opened) main{visibility:hidden}html.js:not(.opened),html.js:not(.opened) body{overflow:hidden}#gate{position:fixed;inset:0;z-index:50;display:flex;flex-direction:column;align-items:center;justify-content:center;background:#fde4ee}#bowbtn{width:min(78vw,340px);background:none;border:0;padding:0}#bowbtn svg{width:100%;display:block}</style>
+<script>document.documentElement.classList.add('js');setTimeout(function(){document.documentElement.classList.add('ready')},3500)</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#f7c1d4">
+<meta property="og:title" content="You’re invited to Daanvi’s Princess Garden Birthday 🎀">
+<meta property="og:description" content="Tap the bow to open the invitation.">
+</head>
+<body>
+<div id="petals" aria-hidden="true"></div>
+
+<div id="gate">
+  <p class="eyebrow">A little letter has arrived</p>
+  <h3 class="script"><span data-k="name"></span>’s Birthday</h3>
+  <button class="bowwrap" id="bowbtn" aria-label="Untie the ribbon to open the invitation">
+    <svg viewBox="0 0 220 170" xmlns="http://www.w3.org/2000/svg">
+      <defs><linearGradient id="rg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fbc6d8"/><stop offset="1" stop-color="#ea7ba5"/></linearGradient>
+      <linearGradient id="rg2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f6a3c1"/><stop offset="1" stop-color="#d9578d"/></linearGradient></defs>
+      <path class="t" d="M104 84 L62 160 L88 148 L110 92Z" fill="url(#rg2)"/>
+      <path class="t" d="M116 84 L158 160 L132 148 L110 92Z" fill="url(#rg2)"/>
+      <path class="l" d="M110 80 C70 8 4 22 14 74 C22 118 82 104 110 80Z" fill="url(#rg)"/>
+      <path class="l" d="M104 78 C74 40 40 40 34 66" stroke="#fff8" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path class="r" d="M110 80 C150 8 216 22 206 74 C198 118 138 104 110 80Z" fill="url(#rg)"/>
+      <path class="r" d="M116 78 C146 40 180 40 186 66" stroke="#fff8" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <rect class="k" x="92" y="64" width="36" height="34" rx="12" fill="url(#rg2)"/>
+      <circle class="k" cx="110" cy="81" r="4" fill="#fff9"/>
+    </svg>
+  </button>
+  <p class="hint">Tap the bow to open</p>
+</div>
+
+<main>
+<section class="hero">
+  <p id="greet" class="rv"></p>
+  <div class="tilt"><div class="card rv" id="hc"><span class="bf">🦋</span><span class="bf b2">🦋</span>
+    <p class="inv">You’re invited to a princess garden party</p>
+    <h1 data-k="name"></h1>
+    <p class="turn">is turning</p>
+    <div class="row">
+      <img src="/src/assets/unicorn.webp" alt="A little girl hugging a unicorn">
+      <div class="ringwrap"><svg viewBox="0 0 100 100" aria-hidden="true"><defs><path id="cp" d="M50 50 m-42 0 a42 42 0 1 1 84 0 a42 42 0 1 1 -84 0"/></defs><text font-size="9" font-weight="700" fill="#c9a45c" textLength="262" lengthAdjust="spacing"><textPath href="#cp" id="rt"></textPath></text></svg><div class="ring"><div><b data-k="age"></b><small>years</small></div></div></div>
+    </div>
+    <p class="when" data-k="dayShort"></p>
+  </div></div>
+  <p class="scrollhint">Scroll for the magic ↓</p>
+</section>
+
+<section id="count">
+  <p class="eyebrow rv">Counting petals</p>
+  <h2 class="rv">The magic begins in</h2>
+  <div class="cd rv" aria-live="off"><div><b id="d">0</b><span>Days</span></div><div><b id="h">0</b><span>Hours</span></div><div><b id="m">0</b><span>Mins</span></div><div><b id="s">0</b><span>Secs</span></div></div>
+  <p id="cdmsg"></p>
+</section>
+
+<section id="meet">
+  <p class="eyebrow rv">Meet our princess</p>
+  <h2 class="rv"><span data-k="full"></span></h2>
+  <div class="meet">
+    <div class="arch rv"><img src="/src/assets/purple.webp" alt="Birthday girl illustration in a lavender gown"></div>
+    <div class="rv">
+      <p class="about" data-k="about"></p>
+      <ul class="facts" id="facts"></ul>
+    </div>
+  </div>
+</section>
+
+<section id="when">
+  <p class="eyebrow rv">Save the date</p>
+  <h2 class="rv">When &amp; where</h2>
+  <div class="tiles">
+    <div class="tile rv"><div class="ic">🌸</div><h4>Date</h4><p data-k="dayLong"></p><small data-k="rel"></small></div>
+    <div class="tile rv"><div class="ic">🕔</div><h4>Time</h4><p data-k="time"></p><small>Indian Standard Time</small></div>
+    <div class="tile rv"><div class="ic">🏰</div><h4>Venue</h4><p data-k="venue"></p><small data-k="address"></small></div>
+  </div>
+  <div class="cal rv"><h5 id="calh"></h5><div class="g" id="calg"></div></div>
+  <div class="btns rv"><a class="btn" id="map" target="_blank" rel="noopener">📍 Open in Maps</a><a class="btn alt" id="gcal" target="_blank" rel="noopener">📅 Add to Calendar</a></div>
+</section>
+
+<section id="plan">
+  <p class="eyebrow rv">A day of enchantment</p>
+  <h2 class="rv">The royal programme</h2>
+  <div class="plan">
+    <img class="rv" src="/src/assets/ball.webp" alt="Princess in a sparkling pink gown holding a wand">
+    <ol class="tl rv" id="tl"></ol>
+  </div>
+</section>
+
+<section id="family">
+  <p class="eyebrow rv">With all our love</p>
+  <h2 class="rv">Our little family</h2>
+  <div class="gal rv">
+    <figure class="fc" tabindex="0" aria-label="Tap to open: Sunset giggles"><div class="inr"><div class="fr"><img src="/src/assets/beach.webp" alt="Family running along a sunset beach"><span class="tap">Tap to open 💌</span><figcaption>Sunset giggles</figcaption></div><div class="bk"></div></div></figure>
+    <figure class="fc" tabindex="0" aria-label="Tap to open: Cuddles &amp; cocoa"><div class="inr"><div class="fr"><img src="/src/assets/white.webp" alt="Parents with their little girl in cosy white sweaters"><span class="tap">Tap to open 💌</span><figcaption>Cuddles &amp; cocoa</figcaption></div><div class="bk"></div></div></figure>
+    <figure class="fc" tabindex="0" aria-label="Tap to open: On top of the world"><div class="inr"><div class="fr"><img src="/src/assets/red.webp" alt="Dad carrying his daughter on his shoulders, mum beside them"><span class="tap">Tap to open 💌</span><figcaption>On top of the world</figcaption></div><div class="bk"></div></div></figure>
+  </div>
+  <div class="par rv"><div><small>Mom</small><b data-k="mom"></b></div><div><small>Dad</small><b data-k="dad"></b></div></div>
+  <p class="fam rv" data-k="family"></p>
+</section>
+
+<section class="wish" id="wish">
+  <p class="eyebrow rv">Before you come</p>
+  <h2 class="rv">Light a wish lantern</h2>
+  <div class="bubble rv"><img src="/src/assets/lily.webp" alt="Happy girl hugging blue lilies among butterflies"></div>
+  <p class="sub rv">Write a birthday wish for <span data-k="name"></span> and watch it float up into the night sky.</p>
+  <div class="sky rv" id="sky"><div class="moon"></div></div>
+  <div class="wf rv"><input id="wt" maxlength="90" placeholder="Type your wish…" aria-label="Your birthday wish"><button class="btn" id="wishbtn">🏮 Release lantern</button></div>
+  <a class="btn alt" id="wawish" target="_blank" rel="noopener" hidden style="margin-top:12px">💬 Also send it on WhatsApp</a>
+</section>
+
+<section class="rsvp" id="rsvp">
+  <div class="card rv">
+    <p class="eyebrow">Will you come?</p>
+    <h2>R.S.V.P.</h2>
+    <p>Let us know so we can set a seat for you at the garden table.</p>
+    <input id="gn" placeholder="Your name" autocomplete="name">
+    <select id="gc"><option value="1">1 guest</option><option value="2">2 guests</option><option value="3">3 guests</option><option value="4">4 guests</option><option value="5">5 guests</option><option value="6">6 guests</option></select>
+    <a class="btn" id="wa" target="_blank" rel="noopener">💬 Reply on WhatsApp</a>
+    <p class="by" data-k="rsvpBy"></p>
+  </div>
+</section>
+</main>
+
+<footer><div class="script" data-k="name"></div><p>Made with love, glitter and a little bit of magic.</p><p data-k="venueLine"></p></footer>
+
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>
